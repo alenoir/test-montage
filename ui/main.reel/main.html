@@ -66,6 +66,20 @@
                 ]
             }
         },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            }
+        },
+        "text1": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text1"},
+                "value": "slide 1"
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -80,7 +94,8 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
-            <div></div>
+            <div data-montage-id="text1"></div>
+            <p data-montage-id="text"></p>
         </div>
     </div>
 </body>
