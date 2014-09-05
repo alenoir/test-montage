@@ -20,6 +20,13 @@
                 "value": 100
             }
         },
+        "Ok !": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "Ok !"},
+                "value": "Title Of ti"
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -27,11 +34,12 @@
                 "value": "Text"
             }
         },
-        "title": {
-            "prototype": "digit/ui/title.reel",
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "element": {"#": "title"},
-                "value": "Title Of ti"
+                "element": {"#": "textField"},
+                "enabled": true,
+                "placeholderValue": "Text"
             }
         }
     }
@@ -39,9 +47,10 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <h1 data-montage-id="Ok !"></h1>
         <input type="number" data-montage-id="number">
         <p data-montage-id="text"></p>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
